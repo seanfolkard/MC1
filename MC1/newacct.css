@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');  
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
 
 body {
 	color: #262626;
@@ -92,6 +92,3 @@ input[type = date], select {
     white-space: nowrap;
     appearance: none;
 }
-
-
-
