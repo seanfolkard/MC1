@@ -9,3 +9,13 @@ body {
     display: grid;
     place-items: center;
 }
+
+.container {
+    background-color: #fafafa;
+    border: 1px solid #e8eaed;
+    border-radius: 25px;
+    font-size: 14px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    line-height: 21px;
+}
