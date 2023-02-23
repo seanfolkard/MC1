@@ -21,16 +21,18 @@
                 <input type="email" name="email" required><br>
                 <label for="dob">Date of birth</label>
                 <input type="date" name="dob" required><br>
-                <span class = "title">Gender</span><br>
-                <input type="radio" id="genderChoice1" name="gender" value="female" />
-                <label for="genderChoice1">Female</label>
-                <input type="radio" id="genderChoice2" name="gender" value="male" />
-                <label for="genderChoice2">Male</label><br><br>
+                <span class="title">Gender</span><br>
+                <input type="radio" id="gender-female" name="gender" value="female" />
+                <label for="gender-female">Female</label>
+                <input type="radio" id="gender-male" name="gender" value="male" />
+                <label for="gender-male">Male</label>
+                <input type="radio" id="gender-null" name="gender" value="null" />
+                <label for="gender-null">Prefer not to say</label><br><br>
                 <input type="checkbox" name = "t&c" required>
-                <label for = "t&c">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy.</label><br><br>
+                <label for="t&c">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy.</label><br><br>
             </form>
             <input type="button" value="Back" id = "back-btn" onclick="history.back()">
-            <input class = "create-acct-btn" type="submit" value="Create account">
+            <input class="create-acct-btn" type="submit" value="Sign Up">
         </div>
     </div>
 </body>
