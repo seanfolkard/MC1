@@ -1,5 +1,4 @@
 .container {
-    position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -8,11 +7,28 @@
     padding: 10px;
 }
 
+.outer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+}
+
 #inner-header {
     font-size: large;
     font-weight: bold;
-    width: auto;
     display: table;
     margin: 0 auto;
     padding: 10px;
+}
+
+#venue-title {
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    display: table;
+    margin: 0 auto;
 }
