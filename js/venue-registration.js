@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", (e) => {
+    setVenueTitle("FilOil EcoOil Centre");
     let form = document.querySelector("#js-fill");
     let userInfo = JSON.parse(localStorage.getItem("userInfo"));
     form.innerHTML += inputGen("firstname", "First Name", "text", userInfo.firstname);
@@ -13,4 +14,8 @@ function inputGen(name, display, type, value, linebreak) {
     if (linebreak)
         string += "<br>";
     return string;
+}
+
+function setVenueTitle(title) {
+    document.querySelector("#venue-title").innerHTML = title;
 }
