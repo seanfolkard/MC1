@@ -14,9 +14,24 @@ document.addEventListener("DOMContentLoaded", (e) => {
             dob: formData.get("dob"),
             gender: formData.get("gender"),
         };
-        console.log(userInfo);
+        console.log("Received: " + userInfo);
         localStorage.setItem("userInfo", JSON.stringify(userInfo));
-        const info = localStorage.getItem("userInfo");
-        console.log("info: ", JSON.parse(info));
+        fadeOut(document.querySelector(".new-account"));
+        setTimeout(() => {
+            window.location.replace("welcome.html");
+        }, 1000);
     });
 });
+
+async function fadeOut(element) {
+    var op = 1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.01){
+            clearInterval(timer);
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.02;
+    }, 1);
+}
