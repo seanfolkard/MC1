@@ -62,8 +62,7 @@ input[type = date], select {
 	font-size: medium;
 }
 
-#back-btn{
-    width: 25%;
+input[type = button], input[type = submit] {
     text-align: center;
     padding: 5px 12px;
     line-height: 20px;
@@ -72,20 +71,14 @@ input[type = date], select {
     cursor: pointer;
     white-space: nowrap;
     appearance: none;
+}
+
+#back-btn{
 	float: left;
 	margin-right: 20px;
 }
 
-.create-acct-btn {
-    width: 25%;
-    text-align: center;
-    padding: 5px 12px;
-    line-height: 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    cursor: pointer;
-    white-space: nowrap;
-    appearance: none;
+#create-acct-btn {
 }
 
 .light {
