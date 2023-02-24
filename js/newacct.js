@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", (e) => {
     let form = document.querySelector("#new-account");
     form.addEventListener("submit", (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         console.log("User submitted form \"new-account\"");
         const formElement = document.querySelector("#new-account");
 
