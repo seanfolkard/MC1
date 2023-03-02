@@ -12,6 +12,16 @@ savebutton.addEventListener('click',function(){
         savebutton.innerHTML = "save";
     } else {
         savebutton.innerHTML = "edit";
+        let userData = JSON.parse(localStorage.getItem("userInfo"));
+        const form = document.querySelector("#user-profile");
+        let formData = new FormData(form);
+        localStorage.removeItem("userInfo");
+        let userInfo = {};
+        for (var pair of formData) {
+            userInfo[pair[0]] = pair[1];
+        }
+        localStorage.setItem("userInfo", JSON.stringify(userInfo));
+
     }
 
 
@@ -21,7 +31,7 @@ savebutton.addEventListener('click',function(){
 
 const logout = document.getElementById("donebutton");
 logout.addEventListener("click", (e) => {
-    localStorage.clear();
+    localStorage.removeItem("userInfo");
 });
 
 document.addEventListener("DOMContentLoaded", (e) => {
