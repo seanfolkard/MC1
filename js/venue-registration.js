@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", (e) => {
+    // let venueInfo = JSON.parse(localStorage.getItem("venueInfo"));
+    
     setVenueTitle("FilOil EcoOil Centre");
     let form = document.querySelector("#js-fill");
     let userInfo = JSON.parse(localStorage.getItem("userInfo"));
