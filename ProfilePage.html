@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
     <link rel="stylesheet" href="css/userpro.css">
     <link rel="stylesheet" href="css/style.css">
@@ -8,48 +8,48 @@
 </head>
 
 <body>
-    <div class="user-profile container"> 
-        <div class="card"> 
-            <div class="info"> 
+    <div class="user-profile container">
+        <div class="card">
+            <div class="info">
                 <b><span>User Profile</span></b>
                 <button id="savebutton">edit</button>
                 <button><a href="login.html" id="donebutton">logout</a></button>
-            </div> 
+            </div>
             <form class="form" id ="user-profile" action="menu.html" method="post">
-            <div class="forms"> 
-                <div class="inputs"> 
-                    <span>First Name:</span> 
-                    <input type="text" readonly value="Juan"> 
+            <div class="forms">
+                <div class="inputs">
+                    <span>First Name:</span>
+                    <input type="text" readonly id="firstname" value="">
                     <span class="regis">Past Registrations:
                         <li>04/24/2022 - Philippine Sports Stadium</li>
                         <li>02/06/2022 - PhilSports Football and Athletics Stadium</li>
                     </span>
-            </div> 
-                <div class="inputs"> 
-                    <span>Last Name:</span> 
-                    <input type="text" readonly value="Dela Cruz"> 
-                </div> 
-                <div class="inputs"> 
-                    <span>Email:</span> 
-                    <input type="text" readonly value="juan.dcruz@gmail.com"> 
+            </div>
+                <div class="inputs">
+                    <span>Last Name:</span>
+                    <input type="text" readonly id="lastname" value="">
                 </div>
-                <div class="inputs"> 
-                    <span>Contact No.:</span> 
-                    <input type="text" readonly value="09173964773"> 
-                </div>  
-                <div class="inputs"> 
-                    <span>UserName:</span> 
-                    <input type="text" readonly value="juandelacruz21"> 
-                </div> 
-                <div class="inputs"> 
-                    <span>Country:</span> 
-                    <input type="text" readonly value="Philippines"> 
-                </div> 
-            </div> 
+                <div class="inputs">
+                    <span>Email:</span>
+                    <input type="text" readonly id="email" value="">
+                </div>
+                <div class="inputs">
+                    <span>Contact No.:</span>
+                    <input type="text" readonly id="contact" value="">
+                </div>
+                <div class="inputs">
+                    <span>Date of Birth:</span>
+                    <input type="date" readonly id="dob" value="">
+                </div>
+                <div class="inputs">
+                    <span>Country:</span>
+                    <input type="text" readonly id="country" value="Philippines">
+                </div>
+            </div>
             </form>
         </div>
     </div>
-    
+
     <script src="js/userpro.js"></script>
 </body>
 

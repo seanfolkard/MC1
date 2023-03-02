@@ -48,7 +48,7 @@
     text-transform: uppercase;
     margin-left: 325px;
     margin-right: -300px;
-    
+
 }
 
 .forms {
@@ -74,7 +74,7 @@
     margin-left: 85px;
     text-align: left;
   }
-  
+
   .card .inputs input {
     height: 40px;
     padding: 0px 10px;
@@ -83,9 +83,9 @@
     outline: none;
     display:inline-flexbox;
   }
-  
 
-.card .inputs input[type="text"][readonly] {
+
+.card .inputs input[type="text"][readonly], .inputs input[readonly] {
     border: 2px solid rgba(0, 0, 0, 0);
 }
 
